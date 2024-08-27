@@ -1,5 +1,4 @@
 #include "stats.h"
-#include <vector>
 #include <numeric>
 #include <algorithm> 
 
@@ -13,5 +12,4 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<double>& value
         statsValue.max = *std::max_element(values.begin(), values.end());
     } 
     return statsValue;
-    //Implement statistics here
 }
